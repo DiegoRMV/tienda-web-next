@@ -1,20 +1,45 @@
 import type { Config } from "tailwindcss";
+import {nextui} from "@nextui-org/react";
 
 const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
-  },
-  plugins: [],
+	content: [
+		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+	],
+	theme: {
+		extend: {
+			backgroundImage: {
+				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+				"gradient-conic":
+					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+			},
+		},
+		colors: {
+			gray: "#212529",
+			green: "#07f1a1",
+			transparent: "transparent",
+			current: "currentColor",
+			white: "#ffffff",
+			black: "#000000",
+			purple: "#3f3cbb",
+			midnight: "#121063",
+			metal: "#565584",
+			tahiti: "#3ab7bf",
+			silver: "#ecebff",
+			bermuda: "#78dcca",
+			cyan: "#06b6d4",
+			yellow: "#eab308",
+			blue: { 500: "#3b82f6", 600: "#2563eb" },
+			blue1: "#0e3b42",
+		},
+	},
+	darkMode: "class",
+	plugins: [
+		require("@tailwindcss/forms"),
+		require("@midudev/tailwind-animations"),
+		nextui(),
+	],
 };
 export default config;
