@@ -8,7 +8,6 @@ import { useState } from "react";
 
 export default function Navbar() {
 	const [isClick, setIsClick] = useState(false);
-
 	const toggleNavbar = (): void => {
 		setIsClick(!isClick);
 	};
