@@ -24,7 +24,9 @@ export default function AboutUs() {
 				</div>
 			</div>
 
-			<h1 className="text-center my-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">El equipo</h1>
+			<h1 className="text-center my-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+				El equipo
+			</h1>
 			<div className="flex flex-wrap justify-center gap-8">
 				<CardUser />
 				<CardUser />

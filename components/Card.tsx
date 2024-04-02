@@ -8,7 +8,7 @@ export default function Card() {
 		<div className="flex flex-col max-w-96 bg-gray items-center rounded-xl">
 			<Image
 				src={product}
-				className="rounded-t-xl object-none max-h-[480px] hover:animate-pulsing"
+				className="rounded-t-xl object-none max-h-[480px]"
 				alt="producto"
 				width={400}
 			/>
